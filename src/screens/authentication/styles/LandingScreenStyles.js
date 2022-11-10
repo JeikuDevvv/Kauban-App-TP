@@ -29,15 +29,15 @@ export const LandingScreenStyles = StyleSheet.create({
     height: '10%',
   },
   welcomeTextStyle: {
-    fontSize: '29%',
+    fontSize: Platform.OS === 'ios' ? '29%' : 20,
     fontFamily: 'Poppins-Bold',
   },
   taglineTextStyle: {
-    fontSize: '15%',
+    fontSize: Platform.OS === 'ios' ? '15%' : 12,
     fontFamily: 'Poppins-Italic',
   },
   textStyles: {
-    letterSpacing: '2%',
+    letterSpacing: Platform.OS === 'ios' ? '2%' : 2,
     textShadowColor: 'rgba(241, 178, 74, 0.75)',
     textShadowOffset: { width: 1, height: 0.5 },
     textShadowRadius: 0,
@@ -46,8 +46,8 @@ export const LandingScreenStyles = StyleSheet.create({
     paddingTop: '15%',
   },
   collabImageStyles: {
-    height: Platform.OS === 'ios' ? 377 : 260,
-    width: Platform.OS === 'ios' ? 400 : 260,
+    height: Platform.OS === 'ios' ? 377 : 425,
+    width: Platform.OS === 'ios' ? 400 : 350,
     resizeMode: 'contain',
   },
   /* Footer */
@@ -61,9 +61,10 @@ export const LandingScreenStyles = StyleSheet.create({
     backgroundColor: 'rgba(22, 22, 63, 0.2)',
     borderColor: 'rgba(255, 182, 47, 0.6)',
     position: 'absolute',
-    bottom: '0%',
+    bottom: Platform.OS === 'ios' ? '0%' : 25,
   },
   LinkTextStyles: {
+    fontSize: Platform.OS === 'ios' ? '0%' : 10,
     color: 'rgba(22, 22, 63, 0.75)',
   },
   InnerLinkTextStyles: {

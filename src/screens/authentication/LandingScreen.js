@@ -1,7 +1,7 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 import { View, Text, SafeAreaView, Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useNavigation } from '@react-navigation/native';
 
 import { LandingScreenStyles } from './styles/LandingScreenStyles';
 import { WavyHeader } from '../../components/WavyHeader';
@@ -37,7 +37,7 @@ export const LandingScreen = () => {
                 LandingScreenStyles.textStyles,
               ]}
             >
-              collaboration | innovation | socialization
+              collaboration | innovation | socialization{' '}
             </Text>
           </View>
           <PrimaryButton

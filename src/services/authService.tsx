@@ -9,7 +9,7 @@ const signIn = (email: string, _password: string): Promise<AuthData> => {
       resolve({
         token: JWTTokenMock,
         email: email,
-        name: 'Lucas Garcez',
+        name: 'jeikudev',
       });
     }, 1000);
   });

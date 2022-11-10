@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TouchableOpacity, Text } from 'react-native';
+import { View, TouchableOpacity, Text, Platform } from 'react-native';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -45,7 +45,7 @@ export const PrimaryButton = (prop) => {
         <Text
           style={{
             color: 'rgb(255, 182, 47)',
-            fontSize: 25,
+            fontSize: Platform.OS === 'ios' ? '25%' : 18,
             fontFamily: 'Montserrat-Bold',
           }}
         >
