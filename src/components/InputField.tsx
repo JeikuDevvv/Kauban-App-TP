@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, TextInput, Text, StyleSheet } from 'react-native';
 
-export const Logo = (prop) => {
+export const InputField = (prop) => {
   return (
     <View style={styles.container}>
       <TextInput
@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 12,
     borderColor: 'rgb(22, 22, 63)',
-    fontFamily: 'Ubuntu-Regular',
   },
   result: {
     width: 288,
@@ -39,6 +38,5 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     fontSize: 12,
     justifyContent: 'center',
-    fontFamily: 'Ubuntu-Regular',
   },
 });

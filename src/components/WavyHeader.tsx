@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
 export const WavyHeader = (prop) => {
@@ -13,7 +13,7 @@ export const WavyHeader = (prop) => {
         }}
       >
         <Svg
-          height="93%"
+          height={Platform.OS === 'ios' ? '93%' : '85.5%'}
           width="100%"
           viewBox="0 0 1440 320"
           style={{ position: 'absolute', top: 130 }}
