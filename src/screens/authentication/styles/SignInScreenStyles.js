@@ -1,10 +1,12 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 export const SignInScreenStyles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
+  ViewContainer: {
     alignItems: 'center',
-    backgroundColor: '#d1d1d1',
+    width: Dimensions.get('screen').width,
+    height: Dimensions.get('screen').height,
+  },
+  SafeAreaViewContainer: {
+    flex: 1,
   },
 });

@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { ActivityIndicator, Button, Text, View } from 'react-native';
+import {
+  ActivityIndicator,
+  Button,
+  Text,
+  View,
+  SafeAreaView,
+} from 'react-native';
 
 import { SignInScreenStyles } from './styles/SignInScreenStyles';
 import { useAuth } from '../../contexts/Auth';
@@ -24,7 +30,7 @@ export const SignInScreen = () => {
   };
 
   return (
-    <View style={SignInScreenStyles.container}>
+    <SafeAreaView style={SignInScreenStyles.SafeAreaViewContainer}>
       <Text>Sign In Screen</Text>
       <InputField
         placeholder="Enter your email address"
@@ -44,6 +50,6 @@ export const SignInScreen = () => {
       ) : (
         <Button title="Sign In" onPress={signIn} />
       )}
-    </View>
+    </SafeAreaView>
   );
 };
