@@ -14,7 +14,11 @@ export const LandingScreen = () => {
     <SafeAreaView style={LandingScreenStyles.SafeAreaViewContainer}>
       <View style={LandingScreenStyles.ViewContainer}>
         <LinearGradient
-          colors={['#FFFFFF', '#FFFFFF', '#FFB62F']}
+          colors={
+            Platform.OS === 'ios'
+              ? ['#FFFFFF', '#FFFFFF', 'rgba(255, 182, 47, 1)']
+              : ['#FFFFFF', 'rgba(255, 182, 47, 0.2)', 'rgb(255, 182, 47)']
+          }
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 1 }}
           style={LandingScreenStyles.ViewContainer}

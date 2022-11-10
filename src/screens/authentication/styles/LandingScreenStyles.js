@@ -37,10 +37,12 @@ export const LandingScreenStyles = StyleSheet.create({
     fontFamily: 'Poppins-Italic',
   },
   textStyles: {
+    color: '#16163F',
     letterSpacing: Platform.OS === 'ios' ? '2%' : 2,
-    textShadowColor: 'rgba(241, 178, 74, 0.75)',
-    textShadowOffset: { width: 1, height: 0.5 },
-    textShadowRadius: 0,
+    textShadowColor: 'rgba(241, 178, 74, 1)',
+    textShadowOffset:
+      Platform.OS === 'ios' ? { width: 1, height: 1 } : { width: 1, height: 1 },
+    textShadowRadius: Platform.OS === 'ios' ? 0 : 1,
   },
   ButtonStyles: {
     paddingTop: '15%',
