@@ -5,7 +5,7 @@
   <img alt="Pomotroid in action" src=".github/images/pomotroid-screens.png" width="800px">
 </div>
 
-<p align="center">Simple and visually-pleasing Pomodoro timer.</p>
+<p align="center">collaboration | innovation | socialization</p>
 
 ---
 
