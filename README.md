@@ -1,11 +1,11 @@
 <div align="center">
-  <img alt="Pomotroid" src=".github/images/pomotroid-title.png" width="800px">
+  <img alt="KaubanApp" src="https://raw.githubusercontent.com/JeikuDevvv/Kauban-App-TP/master/assets/img/kauban_app_assets/kauban_app_logoText.png" width="800px">
 </div>
 <div align="center">
   <img alt="Pomotroid in action" src=".github/images/pomotroid-screens.png" width="800px">
 </div>
 
-<p align="center">Simple and visually-pleasing Pomodoro timer.</p>
+<p align="center">collaboration | innovation | socialization</p>
 
 ---
 
