@@ -46,7 +46,7 @@ export const PrimaryButton = (prop) => {
           style={{
             color: 'rgb(255, 182, 47)',
             fontSize: Platform.OS === 'ios' ? '25%' : 18,
-            fontFamily: 'Montserrat-Bold',
+            fontFamily: 'Poppins-Medium',
           }}
         >
           {prop.customTextHolder}
