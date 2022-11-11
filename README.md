@@ -5,8 +5,34 @@
   <img alt="overViewKaubanApp" src="https://raw.githubusercontent.com/JeikuDevvv/Kauban-App-TP/master/assets/figma/view.png" width="800px">
 </div>
 
-<p align="center">collaboration | innovation | socialization</p>
+<h1 align="center">collaboration | innovation | socialization</h1>
 
 ---
 
+## How can I run this App?
+
+### Clone project:
+
+`git clone https://github.com/JeikuDevvv/Kauban-App-TP.git`
+
+### Install dependecies:
+
+`yarn`
+`npm i`
+
+### Install IOS Pods
+
+`cd ios && pod install`
+
+### Run IOS
+
+`yarn ios`
+
+### Run Android
+
+`yarn android`
+
+### With Expo
+
+`npx expo start`
 
