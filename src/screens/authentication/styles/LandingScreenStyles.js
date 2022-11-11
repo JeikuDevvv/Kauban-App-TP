@@ -66,7 +66,7 @@ export const LandingScreenStyles = StyleSheet.create({
     bottom: Platform.OS === 'ios' ? '0%' : 25,
   },
   LinkTextStyles: {
-    fontSize: Platform.OS === 'ios' ? '0%' : 10,
+    fontSize: Platform.OS === 'ios' ? '15%' : 10,
     color: 'rgba(22, 22, 63, 0.75)',
   },
   InnerLinkTextStyles: {

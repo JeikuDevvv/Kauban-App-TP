@@ -1,7 +1,19 @@
 import React from 'react';
-import { View, TextInput, Text, StyleSheet, Platform } from 'react-native';
+import {
+  View,
+  TextInput,
+  Text,
+  StyleSheet,
+  Platform,
+  Pressable,
+} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { useTogglePasswordVisibility } from '../functions/useTogglePasswordVisibility';
 
-export const InputField = (prop) => {
+export const InputFieldPassword = (prop) => {
+  const { passwordVisibility, rightIcon, handlePasswordVisibility } =
+    useTogglePasswordVisibility();
+
   return (
     <View style={prop.customStyle}>
       <View style={styles.mainContainer}>
@@ -11,13 +23,19 @@ export const InputField = (prop) => {
             placeholder={prop.customPlaceholder}
             autoCapitalize="none"
             autoCorrect={false}
-            textContentType={prop.customContentType}
+            textContentType="newPassword"
+            secureTextEntry={passwordVisibility}
             value={prop.customValue}
             onChangeText={prop.customOnChangeText}
-            keyboardType={prop.customKeboardType}
           />
+          <Pressable
+            onPress={handlePasswordVisibility}
+            style={{ marginRight: 14 }}
+          >
+            <Icon name={rightIcon} size={22} color="rgb(22, 22, 63)" />
+          </Pressable>
         </View>
-        <Text style={styles.result}>{prop.errorMessage}</Text>
+        <Text style={styles.result}>{prop.result}</Text>
       </View>
     </View>
   );
