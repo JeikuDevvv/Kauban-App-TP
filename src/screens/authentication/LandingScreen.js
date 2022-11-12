@@ -48,7 +48,7 @@ export const LandingScreen = () => {
             customTextHolder={'      GET STARTED'}
             customIconName={'hand-o-up'}
             customStyles={LandingScreenStyles.ButtonStyles}
-            customOnPress={() => navigation.navigate('SignIn Screen')}
+            customOnPress={() => navigation.navigate('SignUp Screen')}
           />
           <Image
             source={require('../../../assets/img/Authentication/undraw_team_collaboration_re_ow29.png')}
