@@ -51,7 +51,7 @@ export const KaubanHeader = (prop) => {
           />
         </TouchableOpacity>
         <Image
-          style={{ left: '-70%' }}
+          style={{ left: Platform.OS === 'ios' ? '-70%' : -15 }}
           source={require('../../assets/img/kauban_app_assets/header/kauba-app-text.png')}
         />
         <Image

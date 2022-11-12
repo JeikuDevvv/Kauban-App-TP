@@ -112,7 +112,7 @@ export const SignInScreen = () => {
           >
             Dont have an account yet?{' '}
             <Text
-              style={{ textDecorationLine: 1 }}
+              style={{ textDecorationLine: Platform.OS === 'ios' ? 1 : null }}
               onPress={() => {
                 navigation.navigate('SignUp Screen');
               }}

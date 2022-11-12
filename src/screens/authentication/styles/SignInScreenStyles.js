@@ -43,8 +43,8 @@ export const SignInScreenStyles = StyleSheet.create({
     textShadowRadius: Platform.OS === 'ios' ? 0 : 1,
   },
   gradBudStyles: {
-    height: Platform.OS === 'ios' ? 120 : 260,
-    width: Platform.OS === 'ios' ? 320 : 260,
+    height: Platform.OS === 'ios' ? 120 : 114,
+    width: Platform.OS === 'ios' ? 320 : 300,
     resizeMode: 'contain',
   },
   forgetPassTextStyles: {
