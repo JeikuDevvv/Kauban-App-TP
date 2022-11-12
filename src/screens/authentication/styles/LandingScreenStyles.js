@@ -48,8 +48,8 @@ export const LandingScreenStyles = StyleSheet.create({
     paddingTop: '15%',
   },
   collabImageStyles: {
-    height: Platform.OS === 'ios' ? 377 : 425,
-    width: Platform.OS === 'ios' ? 400 : 350,
+    height: Platform.OS === 'ios' ? 400 : 450,
+    width: Platform.OS === 'ios' ? 350 : 320,
     resizeMode: 'contain',
   },
   /* Footer */
