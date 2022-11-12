@@ -92,7 +92,7 @@ export const SignInScreen = () => {
           </View>
           <TouchableOpacity
             onPress={() => {
-              alert('Forget Password!');
+              navigation.navigate('ForgotPassword Modal');
             }}
           >
             <Text
