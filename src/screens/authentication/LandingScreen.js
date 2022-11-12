@@ -1,6 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { View, Text, SafeAreaView, Image } from 'react-native';
+import { View, Text, SafeAreaView, Image, Platform } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { LandingScreenStyles } from './styles/LandingScreenStyles';

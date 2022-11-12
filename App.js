@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { Router } from './src/routes/Router';
 import { AuthProvider } from './src/contexts/Auth';
 import { useFonts } from 'expo-font';

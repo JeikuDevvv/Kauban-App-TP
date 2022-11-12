@@ -1,12 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
-import {
-  Text,
-  View,
-  SafeAreaView,
-  Image,
-  ScrollView,
-  Platform,
-} from 'react-native';
+import { Text, View, SafeAreaView, Image, Platform } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';

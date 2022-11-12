@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   ActivityIndicator,
-  Button,
+  Platform,
   Text,
   View,
   SafeAreaView,

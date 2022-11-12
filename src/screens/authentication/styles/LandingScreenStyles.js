@@ -1,8 +1,5 @@
-import { StyleSheet, Dimensions } from 'react-native';
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from 'react-native-responsive-screen';
+import { StyleSheet, Dimensions, Platform } from 'react-native';
+import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 export const LandingScreenStyles = StyleSheet.create({
   ViewContainer: {

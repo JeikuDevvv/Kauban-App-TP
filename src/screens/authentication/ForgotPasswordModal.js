@@ -1,14 +1,6 @@
+/* eslint-disable indent */
 import React from 'react';
-import {
-  ActivityIndicator,
-  Button,
-  Text,
-  View,
-  SafeAreaView,
-  Image,
-  TouchableOpacity,
-} from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { Text, View, SafeAreaView, Platform } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { ForgotPasswordStyles } from './styles/ForgotPasswordStyles';
@@ -16,7 +8,6 @@ import { InputField } from '../../components/InputField';
 import { PrimaryButton } from '../../components/PrimaryButton';
 
 export const ForgotPasswordModal = () => {
-  const navigation = useNavigation();
   return (
     <SafeAreaView style={ForgotPasswordStyles.SafeAreaViewContainer}>
       <View style={ForgotPasswordStyles.ViewContainer}>
