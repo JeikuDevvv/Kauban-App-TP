@@ -48,7 +48,7 @@ export const SignInScreen = () => {
           <WavyHeader customStyles={SignInScreenStyles.svgCurve} />
           <KaubanHeader
             customOnPress={() => {
-              navigation.navigate('Landing Screen');
+              navigation.navigate('SignUp Screen');
             }}
           />
 
