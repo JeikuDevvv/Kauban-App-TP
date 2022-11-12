@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "kauban-app2",
-    "slug": "kauban-app2",
+    "name": "kauban App",
+    "slug": "Kauban App",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -14,9 +14,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
