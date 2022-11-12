@@ -48,7 +48,7 @@ export const SignInScreen = () => {
           <WavyHeader customStyles={SignInScreenStyles.svgCurve} />
           <KaubanHeader
             customOnPress={() => {
-              navigation.navigate('Landing Screen');
+              navigation.navigate('SignUp Screen');
             }}
           />
 
@@ -75,12 +75,24 @@ export const SignInScreen = () => {
             source={require('../../../assets/img/Authentication/undraw_graduation_re_gthn.png')}
           />
           <View style={SignInScreenStyles.inputFieldContainer}>
-            <InputField customPlaceholder={'Enter email address'} />
-            <InputFieldPassword customPlaceholder={'Enter password'} />
+            <InputField
+              customPlaceholder={'Enter email address'}
+              customValue={emailAddress}
+              customOnChangeText={(emailAddress) => {
+                setEmailAddress(emailAddress);
+              }}
+            />
+            <InputFieldPassword
+              customPlaceholder={'Enter password'}
+              customValue={password}
+              customOnChangeText={(password) => {
+                setPassword(password);
+              }}
+            />
           </View>
           <TouchableOpacity
             onPress={() => {
-              alert('Forget Password!');
+              navigation.navigate('ForgotPassword Modal');
             }}
           >
             <Text
@@ -92,20 +104,23 @@ export const SignInScreen = () => {
               forget password?
             </Text>
           </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => {
-              alert('Dont have account!');
-            }}
+          <Text
+            style={[
+              { marginBottom: '1%' },
+              SignInScreenStyles.forgetPassTextStyles,
+            ]}
           >
+            Dont have an account yet?{' '}
             <Text
-              style={[
-                { marginBottom: '1%' },
-                SignInScreenStyles.forgetPassTextStyles,
-              ]}
+              style={{ textDecorationLine: Platform.OS === 'ios' ? 1 : null }}
+              onPress={() => {
+                navigation.navigate('SignUp Screen');
+              }}
             >
-              Dont have an account yet? Sign Up
+              Sign Up
             </Text>
-          </TouchableOpacity>
+          </Text>
+
           {loading ? (
             <ActivityIndicator
               color={'#16163F'}
