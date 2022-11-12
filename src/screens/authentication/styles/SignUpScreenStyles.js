@@ -1,10 +1,21 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 export const SignUpScreenStyles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
+  ViewContainer: {
     alignItems: 'center',
-    backgroundColor: '#d1d1d1',
+    width: Dimensions.get('screen').width,
+    height: Dimensions.get('screen').height,
+  },
+  SafeAreaViewContainer: {
+    flex: 1,
+  },
+  /* Body Style */
+  svgCurve: {
+    position: 'absolute',
+    width: Dimensions.get('screen').width,
   },
 });

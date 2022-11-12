@@ -114,7 +114,7 @@ export const SignInScreen = () => {
             <Text
               style={{ textDecorationLine: 1 }}
               onPress={() => {
-                alert('Pressed');
+                navigation.navigate('SignUp Screen');
               }}
             >
               Sign Up
@@ -132,9 +132,7 @@ export const SignInScreen = () => {
               customTextHolder={'      SIGN IN'}
               customIconName={'sign-in'}
               customStyles={SignInScreenStyles.ButtonStyles}
-              customOnPress={() => {
-                [console.log('nani'), signIn];
-              }}
+              customOnPress={signIn}
             />
           )}
           <View style={SignInScreenStyles.footerStyles}>
