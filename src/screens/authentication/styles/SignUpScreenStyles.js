@@ -52,19 +52,19 @@ export const SignUpScreenStyles = StyleSheet.create({
     width: wp('80%'),
   },
   welcomeBudStyles: {
-    height: Platform.OS === 'ios' ? 60 : 260,
-    width: Platform.OS === 'ios' ? 120 : 260,
+    height: Platform.OS === 'ios' ? 60 : 60,
+    width: Platform.OS === 'ios' ? 120 : 120,
     resizeMode: 'contain',
   },
   inputFieldContainer: {
-    width: Platform.OS === 'ios' ? '90%' : 260,
+    width: Platform.OS === 'ios' ? '90%' : '90%',
     marginBottom: '5%',
   },
   ButtonStyles: {
     alignItems: 'center',
   },
   accountTextStyles: {
-    fontSize: Platform.OS === 'ios' ? '15%' : 12,
+    fontSize: Platform.OS === 'ios' ? '15%' : 15,
     fontFamily: 'Poppins-Italic',
     color: 'rgba(0, 0, 0, 0.75)',
   },

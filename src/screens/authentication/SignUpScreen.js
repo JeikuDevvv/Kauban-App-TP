@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
-import { Text, View, SafeAreaView, Image, ScrollView } from 'react-native';
+import {
+  Text,
+  View,
+  SafeAreaView,
+  Image,
+  ScrollView,
+  Platform,
+} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
@@ -122,7 +129,9 @@ export const SignUpScreen = () => {
               >
                 Already have an account?{' '}
                 <Text
-                  style={{ textDecorationLine: 1 }}
+                  style={{
+                    textDecorationLine: Platform.OS === 'ios' ? 1 : null,
+                  }}
                   onPress={() => {
                     navigation.navigate('SignIn Screen');
                   }}
