@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-import { SignUpScreenStyles } from './styles/SignInScreenStyles';
+import { SignUpScreenStyles } from './styles/SignUpScreenStyles';
 
 export const SignUpScreen = () => {
   return (
