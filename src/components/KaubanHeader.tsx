@@ -15,7 +15,15 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 export const KaubanHeader = (prop) => {
   return (
-    <View style={[{ top: '2%', marginBottom: '10%' }, prop.customStyle]}>
+    <View
+      style={[
+        {
+          top: Platform.OS === 'ios' ? '2%' : '5%',
+          marginBottom: Platform.OS === 'ios' ? '10%' : '15%',
+        },
+        prop.customStyle,
+      ]}
+    >
       <LinearGradient
         colors={
           Platform.OS === 'ios'
@@ -24,7 +32,11 @@ export const KaubanHeader = (prop) => {
                 'rgba(255, 182, 47, 0.75)',
                 'rgba(255, 182, 47, 0.5)',
               ]
-            : ['#FFFFFF', 'rgba(255, 182, 47, 0.2)', 'rgb(255, 182, 47)']
+            : [
+                'rgba(22, 22, 63, 0.75)',
+                'rgba(255, 182, 47, 0.75)',
+                'rgba(255, 182, 47, 0.5)',
+              ]
         }
         style={styles.headerContainer}
       >
@@ -57,7 +69,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#16163F',
     width: wp('95%'),
-    height: Platform.OS === 'ios' ? 55 : 90,
+    height: Platform.OS === 'ios' ? 55 : 55,
     borderRadius: 15,
     flexDirection: 'row',
     alignItems: 'center',
