@@ -1,4 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+/**
+ * Copyright (c) 2022 TechnoPerfomance / Jeiku Dev
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 import React, { useState } from 'react';
 import { Text, View, SafeAreaView, Image, Platform } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
