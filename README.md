@@ -11,11 +11,11 @@
 
 ## How can I run this App?
 
-### Clone project
+### Clone project:
 
 `git clone https://github.com/JeikuDevvv/Kauban-App-TP.git`
 
-### Install dependecies
+### Install dependecies:
 
 `yarn`
 `npm i`
