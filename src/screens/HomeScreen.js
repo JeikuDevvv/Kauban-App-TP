@@ -39,7 +39,7 @@ export const HomeScreen = () => {
       <PrimaryButton
         customOnPress={signOut}
         customIconName={'car'}
-        customTextHolder={'BERNARD OUT'}
+        customTextHolder={'   BERNARD OUT'}
       />
     </View>
   );

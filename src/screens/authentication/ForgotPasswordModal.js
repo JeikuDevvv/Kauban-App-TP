@@ -4,13 +4,13 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React from 'react';
-import { Text, View, SafeAreaView, Platform } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import React from 'react';
+import { Platform, SafeAreaView, Text, View } from 'react-native';
 
-import { ForgotPasswordStyles } from './styles/ForgotPasswordStyles';
 import { InputField } from '../../components/InputField';
 import { PrimaryButton } from '../../components/PrimaryButton';
+import { ForgotPasswordStyles } from './styles/ForgotPasswordStyles';
 
 export const ForgotPasswordModal = () => {
   return (
